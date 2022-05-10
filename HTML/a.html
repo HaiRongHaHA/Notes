@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <img src="/files/16797/clock-demo-400px.png"
+  alt="Clock"
+  srcset="/en-US/docs/Web/HTML/Element/img/clock-demo-200px.png 200w, /en-US/docs/Web/HTML/Element/img/clock-demo-400px.png 400w"
+  sizes="(max-width: 400px) 50%, 90%">
+
+</body>
+<script>
+  var clockImage = document.querySelector("img");
+let p = document.createElement("p");
+console.dir(clockImage.currentSrc,'---');
+if (!clockImage.currentSrc.endsWith("200px.png")) {
+  p.innerText = "Using the 200px image.";
+} else {
+  p.innerText = "Using the 400px image!";
+}
+document.body.appendChild(p);
+
+</script>
+
+</html>
