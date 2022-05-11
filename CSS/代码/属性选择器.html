@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>选择器</title>
+</head>
+<style>
+  *[type] {
+    background-color: #f00;
+  }
+  [title][class]{
+    color:green;
+  }
+  [type*=button] {
+    background-color: #000;
+  }
+  [type~=button] {
+    background-color: blue;
+  }
+  [type^=button] {
+    color: #fff;
+  }
+  [type|=button] {
+    color: yellow;
+  }
+</style>
+<body>
+  <button type="button">按钮1</button>
+  <button type="button">按钮2</button>
+  <button type="buttona-1">按钮3</button>
+  <button type="button-1">按钮4</button>
+  <input type="text" placeholder="我是placeholder" value="sss"/>
+  <div class="" title="">我是div</div>
+</body>
+</html>

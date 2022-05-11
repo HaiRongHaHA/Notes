@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style media="screen">
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .border-box {
+        box-sizing: border-box;
+        width: 100px;
+        height: 50px;
+        padding: 10px;
+        border: 5px solid red;
+        margin: 15px;
+      }
+      .content-box {
+        box-sizing: content-box;
+        width: 100px;
+        height: 50px;
+        padding: 10px;
+        border: 5px solid green;
+        margin: 15px;
+      }
+    </style>
+    <div class="border-box">border</div>
+    <div class="content-box">content</div>
+  </body>
+</html>
