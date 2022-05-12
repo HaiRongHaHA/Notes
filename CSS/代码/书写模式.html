@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>书写模式</title>
+  </head>
+  <style>
+    /* horizontal-tb: 块流向从上至下。对应的文本方向是横向的。
+    vertical-rl: 块流向从右向左。对应的文本方向是纵向的。
+    vertical-lr: 块流向从左向右。对应的文本方向是纵向的。 */
+    h1{
+      color: #fff;
+      background-color: #333;
+    }
+    .horizontal {
+      writing-mode: horizontal-tb;
+    }
+
+    .vertical-rl {
+      writing-mode: vertical-rl;
+    }
+
+    .vertical-lr {
+      writing-mode: vertical-lr;
+    }
+  </style>
+  <body>
+    <h1 class="vertical-rl">2.Play with writing modes</h1>    
+    <h1 class="horizontal">1.Play with writing modes</h1>
+    <h1 class="vertical-lr">3.Play with writing modes</h1>
+  </body>
+</html>
