@@ -10,7 +10,7 @@
     /* horizontal-tb: 块流向从上至下。对应的文本方向是横向的。
     vertical-rl: 块流向从右向左。对应的文本方向是纵向的。
     vertical-lr: 块流向从左向右。对应的文本方向是纵向的。 */
-    h1{
+    h1 {
       color: #fff;
       background-color: #333;
     }
@@ -25,10 +25,26 @@
     .vertical-lr {
       writing-mode: vertical-lr;
     }
+    .gushi {
+      width: 200px;
+      height: 200px;
+      background-color: #0ff;
+    }
   </style>
   <body>
-    <h1 class="vertical-rl">2.Play with writing modes</h1>    
-    <h1 class="horizontal">1.Play with writing modes</h1>
-    <h1 class="vertical-lr">3.Play with writing modes</h1>
+    <h1>vertical-rl</h1>
+    <div class="gushi vertical-rl">
+      三月七日沙湖道中遇雨。雨具先去，同行皆狼狈，余独不觉。已而遂晴，故作此。莫听穿林打叶声，何妨吟啸且徐行，竹杖芒鞋轻胜马，谁怕？一蓑烟雨任平生。料峭春风吹酒醒，微冷。山头斜照却相迎。回首向来萧瑟处，归去，也无风雨也无晴
+    </div>
+    <br />
+    <h1>vertical-lr</h1>
+    <div class="gushi vertical-lr">
+      三月七日沙湖道中遇雨。雨具先去，同行皆狼狈，余独不觉。已而遂晴，故作此。莫听穿林打叶声，何妨吟啸且徐行，竹杖芒鞋轻胜马，谁怕？一蓑烟雨任平生。料峭春风吹酒醒，微冷。山头斜照却相迎。回首向来萧瑟处，归去，也无风雨也无晴
+    </div>
+    <br />
+    <h1>horizontal-tb</h1>
+    <div class="gushi horizontal-tb">
+      三月七日沙湖道中遇雨。雨具先去，同行皆狼狈，余独不觉。已而遂晴，故作此。莫听穿林打叶声，何妨吟啸且徐行，竹杖芒鞋轻胜马，谁怕？一蓑烟雨任平生。料峭春风吹酒醒，微冷。山头斜照却相迎。回首向来萧瑟处，归去，也无风雨也无晴
+    </div>
   </body>
 </html>
