@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>发现内存泄漏</title>
+  </head>
+  <body>
+    <div id="container">0</div>
+    <button id="click">click</button>
+    <script>
+    var Person = function () {
+    this.getName = function () {
+        console.log('person');
+    }
+}
+let p1 = new Person();
+p1.getName()
+    </script>
+  </body>
+</html>
